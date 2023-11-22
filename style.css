@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 0;
+    height: 100vh;
+
+    background-color: rgb(240, 240, 240);
+    row-gap: 2rem;
+}
+
+#blocTitre {
+    width: 35%;
+}
+
+canvas {
+    border-radius: 1rem;
+    color: #8a8a8a;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: -1;
+}
