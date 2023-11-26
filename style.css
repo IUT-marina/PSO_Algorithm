@@ -3,21 +3,27 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    row-gap: 2rem;
 
     margin: 0;
-    height: 100vh;
 
+    font-family: 'Poppins', serif;
+    color: #a1dfff;
     background-color: rgb(240, 240, 240);
-    row-gap: 2rem;
 }
 
-#blocTitre {
-    width: 35%;
+#bloc {
+    max-width: 50%;
+}
+
+#blocSettings {
+    display: flex;
+    justify-content: space-between;
 }
 
 canvas {
     border-radius: 1rem;
-    color: #8a8a8a;
+    color: #84b409;
 
     position: absolute;
     top: 0;

@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c51bced3-2d0b-471d-9893-f3f700808def" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/hello.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/pso.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/pso.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +33,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\wamp64\bin\php\php8.2.0\php.exe" />
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2YXLTsQip3IP7SoowhBPmawxhRC" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -56,21 +64,6 @@
       <recent name="C:\Users\0\OneDrive - Université de Bourgogne\1.COURS\TROISIEME annee\S5\R5 - Optimisation\pso\js" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="pso" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="pso" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -80,6 +73,10 @@
       <option name="presentableId" value="Default" />
       <updated>1700666990840</updated>
       <workItem from="1700666992005" duration="9112000" />
+      <workItem from="1700682558715" duration="616000" />
+      <workItem from="1700763466959" duration="319000" />
+      <workItem from="1701037412655" duration="1913000" />
+      <workItem from="1701039381748" duration="5000" />
     </task>
     <servers />
   </component>

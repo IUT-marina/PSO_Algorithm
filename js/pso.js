@@ -1,19 +1,42 @@
 let swarm = [];
 let globalBest;
 let iteration = 0;
-const maxIterations = 20;
+
+const swarmSize = 1000;
+const dimensions = 2;
+const maxIterations = 50;
 const inertiaWeight = 0.5;
 const cognitiveWeight = 0.5;
 const socialWeight = 0.5;
-const delayTowait = 100;
+
+const delayToWait = 100;
+
+
+
+let blocCondArret = document.getElementById('blocCondArret');
+blocCondArret.append(maxIterations + ' itérations.');
+
+let blocNbParticules = document.getElementById('blocNbParticules');
+blocNbParticules.append(swarmSize + ' particules.');
+
+let blocDimensions = document.getElementById('blocDimensions');
+blocDimensions.append(dimensions + ' dimensions.');
+
+let blocInertie = document.getElementById('blocInertie');
+blocInertie.append(inertiaWeight + '.');
+
+let blocCognitif = document.getElementById('blocCognitif');
+blocCognitif.append(cognitiveWeight + '.');
+
+let blocSocial = document.getElementById('blocSocial');
+blocSocial.append(socialWeight + '.');
+
+
 
 function setup() {
     createCanvas(window.innerWidth, window.innerHeight);
     textAlign(CENTER);
     textSize(16);
-
-    const swarmSize = 500;
-    const dimensions = 2;
 
     // Initialisation des particules
     for (let i = 0; i < swarmSize; i++) {
@@ -23,22 +46,24 @@ function setup() {
 
 function draw() {
 
-    background(240, 240, 240);
+    //background(240, 240, 240);
+    background(0, 0, 0);
 
     if (globalBest !== undefined) {
+
         // Dessiner les particules
-        fill(150, 150, 150);
+        fill(254, 254, 254);
         noStroke();
         for (let particle of swarm) {
-            ellipse(particle.position[0] * width, height - particle.position[1] * height, 5, 5);
+            ellipse(particle.position[0] * width, height - particle.position[1] * height, 10, 10);
         }
 
         // Dessiner la meilleure position globale
         fill(255, 0, 0);
-        ellipse(globalBest.position[0] * width, height - globalBest.position[1] * height, 20, 20);
+        ellipse(globalBest.position[0] * width, height - globalBest.position[1] * height, 15, 15);
 
         // Afficher le numéro de l'itération
-        fill(0);
+        fill(132, 180, 9);
         text('Itération: ' + iteration, width - 80, 20);
     }
 }
@@ -53,7 +78,7 @@ async function run() {
         // Algorithme PSO
         for (iteration = 0; iteration < maxIterations; iteration++) {
 
-            await delay(delayTowait);
+            await delay(delayToWait);
 
             let bestParticle = swarm[0];
             for (let particle of swarm) {

@@ -4,14 +4,31 @@
         <meta charset="UTF-8">
         <title>PSO Visualization with p5.js</title>
         <script defer src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-        <script defer src="js/hello.js"></script>
         <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     </head>
     <body>
-        <div id="blocTitre">
+        <div id="bloc">
             <h1>Le PSO</h1>
+            <p>
+                Implémentation simple du <strong>Particle Swarm Optimization</strong> (Optimisation par essaim particulaire).<br>
+                La solution optimale est le <strong>centre de l'écran</strong>.<br><br>
+            </p>
+            <div id="blocSettings">
+                <div id="blocSettings1">
+                    <span>Condition d'arrêt : <i id="blocCondArret"></i></span>
+                    <span><br>Nombre de particules : <i id="blocNbParticules"></i></span>
+                    <span><br>Nombre de dimensions : <i id="blocDimensions"></i></span>
+                </div>
+                <div id="blocSettings2">
+                    <span>Inertie : <i id="blocInertie"></i></span>
+                    <span><br>Poids cognitif : <i id="blocCognitif"></i></span>
+                    <span><br>Poids social : <i id="blocSocial"></i></span>
+                </div>
+
+            </div>
         </div>
-            <script defer src="js/pso.js"></script>
-            <button onclick="run()">Run</button>
+        <script defer src="js/pso.js"></script>
+        <button onclick="run()">Run</button>
     </body>
 </html>
